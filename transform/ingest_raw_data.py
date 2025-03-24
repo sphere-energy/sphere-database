@@ -21,7 +21,7 @@ logging.getLogger('sqlalchemy').setLevel(logging.ERROR)
 
 class IngestRawData:
     def __init__(self, file):
-        URL = "postgresql://postgres:dotcep-demjak-qosmI6@database-sphere.chvqqqs41kgo.eu-central-1.rds.amazonaws.com/sphere"
+        URL = "CONNECTION STRING"
         self.engine = create_engine(URL)
         self.session = Session(self.engine)
         self.conn = sqlite3.connect('Cell_inventory.db')
